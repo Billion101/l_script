@@ -133,7 +133,6 @@ sudo named-checkzone 10.168.192.in-addr.arpa /etc/bind/db.192.168.10
 
 echo "Step 10: Restart BIND9"
 sudo systemctl restart bind9
-sudo systemctl enable bind9
 
 echo "Step 11: Configure firewall"
 sudo ufw allow 53/tcp
